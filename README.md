@@ -96,7 +96,7 @@ total_loss = adv_loss + fsmr_loss
 @inproceedings{kim2021feature,
   title={Feature Statistics Mixing Regularization for Generative Adversarial Networks},
   author={Kim, Junho and Choi, Yunjey and Uh, Youngjung},
-  booktitle={Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition},
+  booktitle={CVPR},
   year={2022}
 }
 ```
