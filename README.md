@@ -18,7 +18,7 @@ def FSM(x, y, alpha, eps=1e-5):
     y_mu, y_var = tf.nn.moments(y, axes=[1,2], keepdims=True) # Nx1x1xC
     
     # normalize
-    x_norm = (x - mu) / tf.sqrt(var + eps)
+    x_norm = (x - x_mu) / tf.sqrt(x_var + eps)
     
     # de-normalize
     x_fsm = x_norm * tf.sqrt(y_var + eps) + y_mu
